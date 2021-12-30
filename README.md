@@ -127,6 +127,16 @@ As a student, I would like to login to the app and access material, submit assig
 as stated above, The team can achieve around **53 story point** per sprint. (average between 45-60)
 
 ## Rationale and Rules used in the Workflow
+A screenshot of the workflow and the rules from Jira are written in the Google Docs file.
+
 The basic idea of the workflow used is that every issue should be moved only in the following sequence, Once the issue is created, It is moved to the TODO state. When it started it have to go to the IMPLEMENTING state and someone must be assigned to it. Then when it is finished, it must go to the TESTING state where only members of the testing teams and either accept it and move it to DONE state or reject it and moves it back to IMPLEMETING phase for refinement.
 
 Taken into consideration of this flow, Two rules were applied to Three transitions. The rule “Assign an issue to someone” is placed on the start transition to make sure that each issue placed in the IMPLEMENTING state must be assigned to one of the dev team first. and the rule “Restrict who can move an issue” is placed on the two transitions: Accepted and Rejected, to make sure only a member of testing team can move this issue from TESTING state to DONE state in case of acceptance or back to IMPLEMENTING state in case of rejection.
+
+
+## Daily Scrum Document
+Written in the Google Docs file with all Jira's screenshots. Click [here](https://docs.google.com/document/d/1TXyKv0WMZDqDoUfbaykE7t5ZJIfIMlwu_XEBcHUHm_w/edit?usp=sharing). to go to it.
+
+## Sprint Document
+Written in the Google Docs file with all Jira's screenshots. Click [here](https://docs.google.com/document/d/1TXyKv0WMZDqDoUfbaykE7t5ZJIfIMlwu_XEBcHUHm_w/edit?usp=sharing). to go to it.
+
