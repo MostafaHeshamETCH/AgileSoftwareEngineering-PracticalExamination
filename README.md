@@ -64,6 +64,7 @@ Main overview:
 - Complete database design with proper modelling for required data.
 - Implement the ability to give specific authorization to selected accounts.
 - Implement the ability for secure authentication of the login process.
+- Implement the ability to post material with these documents formats (.pdf, .docx, .doc, .jpeg, .png) in database with proper authentication and authorization.
 
 ### Sprint no.2
 
@@ -71,10 +72,10 @@ This sprint should be the introduction to teachers basic functionalities for bot
 
 Main overview:
 
-- Interactive UI dashboard for teachers to add material, assignments, quizzes through it.
-- Implement the ability to add the following documents formats (.pdf, .docx, .doc, .jpeg, .png) in database with proper authentication and authorization.
+- Interactive UI dashboard for teachers to add assignments, quizzes through it along with material.
 - Implement the ability to edit or delete any posted document with proper authentication and authorization.
 - Implement the ability to specify due dates for assignments and start and end dates for quizzes.
+- Implement the ability for teachers to accept registered students to courses
 
 ## Far Vision
 
@@ -88,7 +89,8 @@ The ordering of the backlog items are based on their true buisness value given t
  - The sprint duration is **3 weeks**.
  - The team can achieve around **51 story point** per sprint.
  - Story points scale used is based on **modified Fibonacci sequence** which is as following {1, 2, 3, 5, 8, 13, 20, 40, 100}.
- - For each productive working day where the almost all the team members are working for 8 hours a day / 5 times a week, They can finish 4-6 story points.
+ - For each productive working day where the almost all the team members are working for 8 hours a day / 5 times a week, They can finish 3-4 story points per day.
+ - 20 story points is a relatively large story, 13 is a medium-sized one and 8 and less are smaller-sized stories.
 
 ### Ordered Product Backlog Items
 The order for the first two epcis should be as following
@@ -120,4 +122,11 @@ As a student, I would like to login to the app and access material, submit assig
 | 12 | Take Quizzes | As a student, I would like to take quizzes so my teacher can evaluate them. | 20 Story Points | Mostafa, Ashraf, Sherif, Marwan  |
 | 13 | Check Grades & Request Reviews | As a student, I would like to check my grades at anytime and request grade review if needed so I can validate my grades. | 20 Story Points | Etchos, Sherif, Hesham |
 
+## Number of story points my team can achieve per sprint
+
+as stated above, The team can achieve around **53 story point** per sprint. (average between 45-60)
+
 ## Rationale and Rules used in the Workflow
+The basic idea of the workflow used is that every issue should be moved only in the following sequence, Once the issue is created, It is moved to the TODO state. When it started it have to go to the IMPLEMENTING state and someone must be assigned to it. Then when it is finished, it must go to the TESTING state where only members of the testing teams and either accept it and move it to DONE state or reject it and moves it back to IMPLEMETING phase for refinement.
+
+Taken into consideration of this flow, Two rules were applied to Three transitions. The rule “Assign an issue to someone” is placed on the start transition to make sure that each issue placed in the IMPLEMENTING state must be assigned to one of the dev team first. and the rule “Restrict who can move an issue” is placed on the two transitions: Accepted and Rejected, to make sure only a member of testing team can move this issue from TESTING state to DONE state in case of acceptance or back to IMPLEMENTING state in case of rejection.
